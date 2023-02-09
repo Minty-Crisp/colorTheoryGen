@@ -2,7 +2,7 @@
 Generate a color theory palette from a given color, random color within a color family or a random color from any family.
 
 ---
-[View Examples](https://minty-crisp.github.io/)
+[View Examples](https://minty-crisp.github.io/colorTheoryGen/)
 
 ---
 
