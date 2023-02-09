@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Site Display Title -->
+<title>Color Theory Gen</title>
+<!-- Color Theory Gen JS -->
+<script src="./colorTheoryGen.js"></script>
+</head>
+<style>
+body {
+background-color: #312626;
+background-image: none;
+background-repeat: repeat;
+}
+details {
+  font: 16px "Open Sans", Calibri, sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+details > summary {
+  padding: 2px 6px;
+  width: 100%;
+  background-color: #ddd;
+  border: none;
+  box-shadow: 3px 3px 4px black;
+  cursor: pointer;
+  list-style: none;
+}
+
+details > p {
+  border-radius: 0 0 10px 10px;
+  background-color: #ddd;
+  padding: 2px 6px;
+  margin: 0;
+  box-shadow: 3px 3px 4px black;
+}
+
+</style>
+<body>
+<!-- Random Colors Title -->
+<div id="colorRandom"><h2 id="colorRandomText">Color Theory Gen Random Examples | Click Color to Expand/Collapse</h2></div>
+<!-- Color 1 open -->
+<details open>
+<summary id="color1All"><strong>Color1</strong></summary>
+<ul>
+<li><div id="color1"><h2 id="color1Text">Color1</h2></div></li>
+<li><div id="color1Compl"><h2 id="color1ComplText">Color1</h2></div></li>
+<li><div id="color1SplitCompl1"><h2 id="color1SplitCompl1Text">Color1</h2></div></li>
+<li><div id="color1SplitCompl2"><h2 id="color1SplitCompl2Text">Color1</h2></div></li>
+<li><div id="color1Triadic1"><h2 id="color1Triadic1Text">Color1</h2></div></li>
+<li><div id="color1Triadic2"><h2 id="color1Triadic2Text">Color1</h2></div></li>
+<li><div id="color1Tetradic1"><h2 id="color1Tetradic1Text">Color1</h2></div></li>
+<li><div id="color1Tetradic2"><h2 id="color1Tetradic2Text">Color1</h2></div></li>
+<li><div id="color1Tetradic3"><h2 id="color1Tetradic3Text">Color1</h2></div></li>
+<li><div id="color1Analog1"><h2 id="color1Analog1Text">Color1</h2></div></li>
+<li><div id="color1Analog2"><h2 id="color1Analog2Text">Color1</h2></div></li>
+<li><div id="color1Analog3"><h2 id="color1Analog3Text">Color1</h2></div></li>
+</ul>
+</details>
+<!-- Color 2 -->
+<details>
+<summary id="color2All"><strong>Color2</strong></summary>
+<ul>
+<li><div id="color2"><h2 id="color2Text">Color2</h2></div></li>
+<li><div id="color2Compl"><h2 id="color2ComplText">Color2</h2></div></li>
+<li><div id="color2SplitCompl1"><h2 id="color2SplitCompl1Text">Color2</h2></div></li>
+<li><div id="color2SplitCompl2"><h2 id="color2SplitCompl2Text">Color2</h2></div></li>
+<li><div id="color2Triadic1"><h2 id="color2Triadic1Text">Color2</h2></div></li>
+<li><div id="color2Triadic2"><h2 id="color2Triadic2Text">Color2</h2></div></li>
+<li><div id="color2Tetradic1"><h2 id="color2Tetradic1Text">Color2</h2></div></li>
+<li><div id="color2Tetradic2"><h2 id="color2Tetradic2Text">Color2</h2></div></li>
+<li><div id="color2Tetradic3"><h2 id="color2Tetradic3Text">Color2</h2></div></li>
+<li><div id="color2Analog1"><h2 id="color2Analog1Text">Color2</h2></div></li>
+<li><div id="color2Analog2"><h2 id="color2Analog2Text">Color2</h2></div></li>
+<li><div id="color2Analog3"><h2 id="color2Analog3Text">Color2</h2></div></li>
+</ul>
+</details>
+<!-- Color 3 -->
+<details>
+<summary id="color3All"><strong>Color3</strong></summary>
+<ul>
+<li><div id="color3"><h2 id="color3Text">color3</h2></div></li>
+<li><div id="color3Compl"><h2 id="color3ComplText">color3</h2></div></li>
+<li><div id="color3SplitCompl1"><h2 id="color3SplitCompl1Text">color3</h2></div></li>
+<li><div id="color3SplitCompl2"><h2 id="color3SplitCompl2Text">color3</h2></div></li>
+<li><div id="color3Triadic1"><h2 id="color3Triadic1Text">color3</h2></div></li>
+<li><div id="color3Triadic2"><h2 id="color3Triadic2Text">color3</h2></div></li>
+<li><div id="color3Tetradic1"><h2 id="color3Tetradic1Text">color3</h2></div></li>
+<li><div id="color3Tetradic2"><h2 id="color3Tetradic2Text">color3</h2></div></li>
+<li><div id="color3Tetradic3"><h2 id="color3Tetradic3Text">color3</h2></div></li>
+<li><div id="color3Analog1"><h2 id="color3Analog1Text">color3</h2></div></li>
+<li><div id="color3Analog2"><h2 id="color3Analog2Text">color3</h2></div></li>
+<li><div id="color3Analog3"><h2 id="color3Analog3Text">color3</h2></div></li>
+</ul>
+</details>
+<!-- Color 4 -->
+<details>
+<summary id="color4All"><strong>Color4</strong></summary>
+<ul>
+<li><div id="color4"><h2 id="color4Text">color4</h2></div></li>
+<li><div id="color4Compl"><h2 id="color4ComplText">color4</h2></div></li>
+<li><div id="color4SplitCompl1"><h2 id="color4SplitCompl1Text">color4</h2></div></li>
+<li><div id="color4SplitCompl2"><h2 id="color4SplitCompl2Text">color4</h2></div></li>
+<li><div id="color4Triadic1"><h2 id="color4Triadic1Text">color4</h2></div></li>
+<li><div id="color4Triadic2"><h2 id="color4Triadic2Text">color4</h2></div></li>
+<li><div id="color4Tetradic1"><h2 id="color4Tetradic1Text">color4</h2></div></li>
+<li><div id="color4Tetradic2"><h2 id="color4Tetradic2Text">color4</h2></div></li>
+<li><div id="color4Tetradic3"><h2 id="color4Tetradic3Text">color4</h2></div></li>
+<li><div id="color4Analog1"><h2 id="color4Analog1Text">color4</h2></div></li>
+<li><div id="color4Analog2"><h2 id="color4Analog2Text">color4</h2></div></li>
+<li><div id="color4Analog3"><h2 id="color4Analog3Text">color4</h2></div></li>
+</ul>
+</details>
+
+<!-- Color 5 -->
+<details>
+<summary id="color5All"><strong>Color5</strong></summary>
+<ul>
+<li><div id="color5"><h2 id="color5Text">color5</h2></div></li>
+<li><div id="color5Compl"><h2 id="color5ComplText">color5</h2></div></li>
+<li><div id="color5SplitCompl1"><h2 id="color5SplitCompl1Text">color5</h2></div></li>
+<li><div id="color5SplitCompl2"><h2 id="color5SplitCompl2Text">color5</h2></div></li>
+<li><div id="color5Triadic1"><h2 id="color5Triadic1Text">color5</h2></div></li>
+<li><div id="color5Triadic2"><h2 id="color5Triadic2Text">color5</h2></div></li>
+<li><div id="color5Tetradic1"><h2 id="color5Tetradic1Text">color5</h2></div></li>
+<li><div id="color5Tetradic2"><h2 id="color5Tetradic2Text">color5</h2></div></li>
+<li><div id="color5Tetradic3"><h2 id="color5Tetradic3Text">color5</h2></div></li>
+<li><div id="color5Analog1"><h2 id="color5Analog1Text">color5</h2></div></li>
+<li><div id="color5Analog2"><h2 id="color5Analog2Text">color5</h2></div></li>
+<li><div id="color5Analog3"><h2 id="color5Analog3Text">color5</h2></div></li>
+</ul>
+</details>
+
+<!-- Color 6 -->
+<details>
+<summary id="color6All"><strong>Color6</strong></summary>
+<ul>
+<li><div id="color6"><h2 id="color6Text">color6</h2></div></li>
+<li><div id="color6Compl"><h2 id="color6ComplText">color6</h2></div></li>
+<li><div id="color6SplitCompl1"><h2 id="color6SplitCompl1Text">color6</h2></div></li>
+<li><div id="color6SplitCompl2"><h2 id="color6SplitCompl2Text">color6</h2></div></li>
+<li><div id="color6Triadic1"><h2 id="color6Triadic1Text">color6</h2></div></li>
+<li><div id="color6Triadic2"><h2 id="color6Triadic2Text">color6</h2></div></li>
+<li><div id="color6Tetradic1"><h2 id="color6Tetradic1Text">color6</h2></div></li>
+<li><div id="color6Tetradic2"><h2 id="color6Tetradic2Text">color6</h2></div></li>
+<li><div id="color6Tetradic3"><h2 id="color6Tetradic3Text">color6</h2></div></li>
+<li><div id="color6Analog1"><h2 id="color6Analog1Text">color6</h2></div></li>
+<li><div id="color6Analog2"><h2 id="color6Analog2Text">color6</h2></div></li>
+<li><div id="color6Analog3"><h2 id="color6Analog3Text">color6</h2></div></li>
+</ul>
+</details>
+
+<!-- Color 7 -->
+<details>
+<summary id="color7All"><strong>Color7</strong></summary>
+<ul>
+<li><div id="color7"><h2 id="color7Text">color7</h2></div></li>
+<li><div id="color7Compl"><h2 id="color7ComplText">color7</h2></div></li>
+<li><div id="color7SplitCompl1"><h2 id="color7SplitCompl1Text">color7</h2></div></li>
+<li><div id="color7SplitCompl2"><h2 id="color7SplitCompl2Text">color7</h2></div></li>
+<li><div id="color7Triadic1"><h2 id="color7Triadic1Text">color7</h2></div></li>
+<li><div id="color7Triadic2"><h2 id="color7Triadic2Text">color7</h2></div></li>
+<li><div id="color7Tetradic1"><h2 id="color7Tetradic1Text">color7</h2></div></li>
+<li><div id="color7Tetradic2"><h2 id="color7Tetradic2Text">color7</h2></div></li>
+<li><div id="color7Tetradic3"><h2 id="color7Tetradic3Text">color7</h2></div></li>
+<li><div id="color7Analog1"><h2 id="color7Analog1Text">color7</h2></div></li>
+<li><div id="color7Analog2"><h2 id="color7Analog2Text">color7</h2></div></li>
+<li><div id="color7Analog3"><h2 id="color7Analog3Text">color7</h2></div></li>
+</ul>
+</details>
+
+<!-- Color 8 -->
+<details>
+<summary id="color8All"><strong>Color8</strong></summary>
+<ul>
+<li><div id="color8"><h2 id="color8Text">color8</h2></div></li>
+<li><div id="color8Compl"><h2 id="color8ComplText">color8</h2></div></li>
+<li><div id="color8SplitCompl1"><h2 id="color8SplitCompl1Text">color8</h2></div></li>
+<li><div id="color8SplitCompl2"><h2 id="color8SplitCompl2Text">color8</h2></div></li>
+<li><div id="color8Triadic1"><h2 id="color8Triadic1Text">color8</h2></div></li>
+<li><div id="color8Triadic2"><h2 id="color8Triadic2Text">color8</h2></div></li>
+<li><div id="color8Tetradic1"><h2 id="color8Tetradic1Text">color8</h2></div></li>
+<li><div id="color8Tetradic2"><h2 id="color8Tetradic2Text">color8</h2></div></li>
+<li><div id="color8Tetradic3"><h2 id="color8Tetradic3Text">color8</h2></div></li>
+<li><div id="color8Analog1"><h2 id="color8Analog1Text">color8</h2></div></li>
+<li><div id="color8Analog2"><h2 id="color8Analog2Text">color8</h2></div></li>
+<li><div id="color8Analog3"><h2 id="color8Analog3Text">color8</h2></div></li>
+</ul>
+</details>
+
+<!-- Color Family -->
+<label for="colorFam-select">Choose a Color Family:</label>
+<select name="colorFam" id="colorFam-select">
+    <option value="red" selected>Red</option>
+    <option value="orange">Orange</option>
+    <option value="yellow">Yellow</option>
+    <option value="lime">Lime</option>
+    <option value="blue">Blue</option>
+    <option value="cyan">Cyan</option>
+    <option value="magenta">Magenta</option>
+    <option value="maroon">Maroon</option>
+    <option value="olive">Olive</option>
+    <option value="green">Green</option>
+    <option value="purple">Purple</option>
+    <option value="teal">Teal</option>
+    <option value="navy">Navy</option>
+    <option value="black">Black</option>
+    <option value="white">White</option>
+    <option value="silver">Silver</option>
+    <option value="grey">Grey</option>
+</select>
+<details>
+<summary id="colorFam"><strong id='colorFamText'>ColorFamily</strong></summary>
+<ul>
+<li><div id="colorFam1"><h2 id="colorFam1Text">Color 1</h2></div></li>
+<li><div id="colorFam2"><h2 id="colorFam2Text">Color 2</h2></div></li>
+<li><div id="colorFam3"><h2 id="colorFam3Text">Color 3</h2></div></li>
+<li><div id="colorFam4"><h2 id="colorFam4Text">Color 4</h2></div></li>
+<li><div id="colorFam5"><h2 id="colorFam5Text">Color 5</h2></div></li>
+<li><div id="colorFam6"><h2 id="colorFam6Text">Color 6</h2></div></li>
+<li><div id="colorFam7"><h2 id="colorFam7Text">Color 7</h2></div></li>
+<li><div id="colorFam8"><h2 id="colorFam8Text">Color 8</h2></div></li>
+</ul>
+</details>
+
+
+</body>
+<script>
+
+
+
+//Color 1
+let newColor1 = colorTheoryGen();
+color1.style['background-color'] = newColor1.base;
+color1All.style['background-color'] = newColor1.base;
+color1Text.innerHTML = 'Base : ' + newColor1.base;
+color1Compl.style['background-color'] = newColor1.compl;
+color1ComplText.innerHTML = 'Complementary : ' + newColor1.compl;
+color1SplitCompl1.style['background-color'] = newColor1.splitCompl[0];
+color1SplitCompl1Text.innerHTML = 'Split Complementary 1 : ' + newColor1.splitCompl[0];
+color1SplitCompl2.style['background-color'] = newColor1.splitCompl[1];
+color1SplitCompl2Text.innerHTML = 'Split Complementary 2 : ' + newColor1.splitCompl[1];
+color1Triadic1.style['background-color'] = newColor1.triadic[0];
+color1Triadic1Text.innerHTML = 'Triadic 1 : ' + newColor1.triadic[0];
+color1Triadic2.style['background-color'] = newColor1.triadic[1];
+color1Triadic2Text.innerHTML = 'Triadic 2 : ' + newColor1.triadic[1];
+color1Tetradic1.style['background-color'] = newColor1.tetradic[0];
+color1Tetradic1Text.innerHTML = 'Tetradic 1 : ' + newColor1.tetradic[0];
+color1Tetradic2.style['background-color'] = newColor1.tetradic[1];
+color1Tetradic2Text.innerHTML = 'Tetradic 2 : ' + newColor1.tetradic[1];
+color1Tetradic3.style['background-color'] = newColor1.tetradic[2];
+color1Tetradic3Text.innerHTML = 'Tetradic 3 : ' + newColor1.tetradic[2];
+color1Analog1.style['background-color'] = newColor1.analog[0];
+color1Analog1Text.innerHTML = 'Analog 1 : ' + newColor1.analog[0];
+color1Analog2.style['background-color'] = newColor1.analog[1];
+color1Analog2Text.innerHTML = 'Analog 2 : ' + newColor1.analog[1];
+color1Analog3.style['background-color'] = newColor1.analog[2];
+color1Analog3Text.innerHTML = 'Analog 3 : ' + newColor1.analog[2];
+
+//Color 2
+let newcolor2 = colorTheoryGen();
+color2.style['background-color'] = newcolor2.base;
+color2All.style['background-color'] = newcolor2.base;
+color2Text.innerHTML = 'Base : ' + newcolor2.base;
+color2Compl.style['background-color'] = newcolor2.compl;
+color2ComplText.innerHTML = 'Complementary : ' + newcolor2.compl;
+color2SplitCompl1.style['background-color'] = newcolor2.splitCompl[0];
+color2SplitCompl1Text.innerHTML = 'Split Complementary 1 : ' + newcolor2.splitCompl[0];
+color2SplitCompl2.style['background-color'] = newcolor2.splitCompl[1];
+color2SplitCompl2Text.innerHTML = 'Split Complementary 2 : ' + newcolor2.splitCompl[1];
+color2Triadic1.style['background-color'] = newcolor2.triadic[0];
+color2Triadic1Text.innerHTML = 'Triadic 1 : ' + newcolor2.triadic[0];
+color2Triadic2.style['background-color'] = newcolor2.triadic[1];
+color2Triadic2Text.innerHTML = 'Triadic 2 : ' + newcolor2.triadic[1];
+color2Tetradic1.style['background-color'] = newcolor2.tetradic[0];
+color2Tetradic1Text.innerHTML = 'Tetradic 1 : ' + newcolor2.tetradic[0];
+color2Tetradic2.style['background-color'] = newcolor2.tetradic[1];
+color2Tetradic2Text.innerHTML = 'Tetradic 2 : ' + newcolor2.tetradic[1];
+color2Tetradic3.style['background-color'] = newcolor2.tetradic[2];
+color2Tetradic3Text.innerHTML = 'Tetradic 3 : ' + newcolor2.tetradic[2];
+color2Analog1.style['background-color'] = newcolor2.analog[0];
+color2Analog1Text.innerHTML = 'Analog 1 : ' + newcolor2.analog[0];
+color2Analog2.style['background-color'] = newcolor2.analog[1];
+color2Analog2Text.innerHTML = 'Analog 2 : ' + newcolor2.analog[1];
+color2Analog3.style['background-color'] = newcolor2.analog[2];
+color2Analog3Text.innerHTML = 'Analog 3 : ' + newcolor2.analog[2];
+
+//Color 3
+let newcolor3 = colorTheoryGen();
+color3.style['background-color'] = newcolor3.base;
+color3All.style['background-color'] = newcolor3.base;
+color3Text.innerHTML = 'Base : ' + newcolor3.base;
+color3Compl.style['background-color'] = newcolor3.compl;
+color3ComplText.innerHTML = 'Complementary : ' + newcolor3.compl;
+color3SplitCompl1.style['background-color'] = newcolor3.splitCompl[0];
+color3SplitCompl1Text.innerHTML = 'Split Complementary 1 : ' + newcolor3.splitCompl[0];
+color3SplitCompl2.style['background-color'] = newcolor3.splitCompl[1];
+color3SplitCompl2Text.innerHTML = 'Split Complementary 2 : ' + newcolor3.splitCompl[1];
+color3Triadic1.style['background-color'] = newcolor3.triadic[0];
+color3Triadic1Text.innerHTML = 'Triadic 1 : ' + newcolor3.triadic[0];
+color3Triadic2.style['background-color'] = newcolor3.triadic[1];
+color3Triadic2Text.innerHTML = 'Triadic 2 : ' + newcolor3.triadic[1];
+color3Tetradic1.style['background-color'] = newcolor3.tetradic[0];
+color3Tetradic1Text.innerHTML = 'Tetradic 1 : ' + newcolor3.tetradic[0];
+color3Tetradic2.style['background-color'] = newcolor3.tetradic[1];
+color3Tetradic2Text.innerHTML = 'Tetradic 2 : ' + newcolor3.tetradic[1];
+color3Tetradic3.style['background-color'] = newcolor3.tetradic[2];
+color3Tetradic3Text.innerHTML = 'Tetradic 3 : ' + newcolor3.tetradic[2];
+color3Analog1.style['background-color'] = newcolor3.analog[0];
+color3Analog1Text.innerHTML = 'Analog 1 : ' + newcolor3.analog[0];
+color3Analog2.style['background-color'] = newcolor3.analog[1];
+color3Analog2Text.innerHTML = 'Analog 2 : ' + newcolor3.analog[1];
+color3Analog3.style['background-color'] = newcolor3.analog[2];
+color3Analog3Text.innerHTML = 'Analog 3 : ' + newcolor3.analog[2];
+
+//Color 4
+let newcolor4 = colorTheoryGen();
+color4.style['background-color'] = newcolor4.base;
+color4All.style['background-color'] = newcolor4.base;
+color4Text.innerHTML = 'Base : ' + newcolor4.base;
+color4Compl.style['background-color'] = newcolor4.compl;
+color4ComplText.innerHTML = 'Complementary : ' + newcolor4.compl;
+color4SplitCompl1.style['background-color'] = newcolor4.splitCompl[0];
+color4SplitCompl1Text.innerHTML = 'Split Complementary 1 : ' + newcolor4.splitCompl[0];
+color4SplitCompl2.style['background-color'] = newcolor4.splitCompl[1];
+color4SplitCompl2Text.innerHTML = 'Split Complementary 2 : ' + newcolor4.splitCompl[1];
+color4Triadic1.style['background-color'] = newcolor4.triadic[0];
+color4Triadic1Text.innerHTML = 'Triadic 1 : ' + newcolor4.triadic[0];
+color4Triadic2.style['background-color'] = newcolor4.triadic[1];
+color4Triadic2Text.innerHTML = 'Triadic 2 : ' + newcolor4.triadic[1];
+color4Tetradic1.style['background-color'] = newcolor4.tetradic[0];
+color4Tetradic1Text.innerHTML = 'Tetradic 1 : ' + newcolor4.tetradic[0];
+color4Tetradic2.style['background-color'] = newcolor4.tetradic[1];
+color4Tetradic2Text.innerHTML = 'Tetradic 2 : ' + newcolor4.tetradic[1];
+color4Tetradic3.style['background-color'] = newcolor4.tetradic[2];
+color4Tetradic3Text.innerHTML = 'Tetradic 3 : ' + newcolor4.tetradic[2];
+color4Analog1.style['background-color'] = newcolor4.analog[0];
+color4Analog1Text.innerHTML = 'Analog 1 : ' + newcolor4.analog[0];
+color4Analog2.style['background-color'] = newcolor4.analog[1];
+color4Analog2Text.innerHTML = 'Analog 2 : ' + newcolor4.analog[1];
+color4Analog3.style['background-color'] = newcolor4.analog[2];
+color4Analog3Text.innerHTML = 'Analog 3 : ' + newcolor4.analog[2];
+
+//Color 5
+let newcolor5 = colorTheoryGen();
+color5.style['background-color'] = newcolor5.base;
+color5All.style['background-color'] = newcolor5.base;
+color5Text.innerHTML = 'Base : ' + newcolor5.base;
+color5Compl.style['background-color'] = newcolor5.compl;
+color5ComplText.innerHTML = 'Complementary : ' + newcolor5.compl;
+color5SplitCompl1.style['background-color'] = newcolor5.splitCompl[0];
+color5SplitCompl1Text.innerHTML = 'Split Complementary 1 : ' + newcolor5.splitCompl[0];
+color5SplitCompl2.style['background-color'] = newcolor5.splitCompl[1];
+color5SplitCompl2Text.innerHTML = 'Split Complementary 2 : ' + newcolor5.splitCompl[1];
+color5Triadic1.style['background-color'] = newcolor5.triadic[0];
+color5Triadic1Text.innerHTML = 'Triadic 1 : ' + newcolor5.triadic[0];
+color5Triadic2.style['background-color'] = newcolor5.triadic[1];
+color5Triadic2Text.innerHTML = 'Triadic 2 : ' + newcolor5.triadic[1];
+color5Tetradic1.style['background-color'] = newcolor5.tetradic[0];
+color5Tetradic1Text.innerHTML = 'Tetradic 1 : ' + newcolor5.tetradic[0];
+color5Tetradic2.style['background-color'] = newcolor5.tetradic[1];
+color5Tetradic2Text.innerHTML = 'Tetradic 2 : ' + newcolor5.tetradic[1];
+color5Tetradic3.style['background-color'] = newcolor5.tetradic[2];
+color5Tetradic3Text.innerHTML = 'Tetradic 3 : ' + newcolor5.tetradic[2];
+color5Analog1.style['background-color'] = newcolor5.analog[0];
+color5Analog1Text.innerHTML = 'Analog 1 : ' + newcolor5.analog[0];
+color5Analog2.style['background-color'] = newcolor5.analog[1];
+color5Analog2Text.innerHTML = 'Analog 2 : ' + newcolor5.analog[1];
+color5Analog3.style['background-color'] = newcolor5.analog[2];
+color5Analog3Text.innerHTML = 'Analog 3 : ' + newcolor5.analog[2];
+
+//Color 6
+let newcolor6 = colorTheoryGen();
+color6.style['background-color'] = newcolor6.base;
+color6All.style['background-color'] = newcolor6.base;
+color6Text.innerHTML = 'Base : ' + newcolor6.base;
+color6Compl.style['background-color'] = newcolor6.compl;
+color6ComplText.innerHTML = 'Complementary : ' + newcolor6.compl;
+color6SplitCompl1.style['background-color'] = newcolor6.splitCompl[0];
+color6SplitCompl1Text.innerHTML = 'Split Complementary 1 : ' + newcolor6.splitCompl[0];
+color6SplitCompl2.style['background-color'] = newcolor6.splitCompl[1];
+color6SplitCompl2Text.innerHTML = 'Split Complementary 2 : ' + newcolor6.splitCompl[1];
+color6Triadic1.style['background-color'] = newcolor6.triadic[0];
+color6Triadic1Text.innerHTML = 'Triadic 1 : ' + newcolor6.triadic[0];
+color6Triadic2.style['background-color'] = newcolor6.triadic[1];
+color6Triadic2Text.innerHTML = 'Triadic 2 : ' + newcolor6.triadic[1];
+color6Tetradic1.style['background-color'] = newcolor6.tetradic[0];
+color6Tetradic1Text.innerHTML = 'Tetradic 1 : ' + newcolor6.tetradic[0];
+color6Tetradic2.style['background-color'] = newcolor6.tetradic[1];
+color6Tetradic2Text.innerHTML = 'Tetradic 2 : ' + newcolor6.tetradic[1];
+color6Tetradic3.style['background-color'] = newcolor6.tetradic[2];
+color6Tetradic3Text.innerHTML = 'Tetradic 3 : ' + newcolor6.tetradic[2];
+color6Analog1.style['background-color'] = newcolor6.analog[0];
+color6Analog1Text.innerHTML = 'Analog 1 : ' + newcolor6.analog[0];
+color6Analog2.style['background-color'] = newcolor6.analog[1];
+color6Analog2Text.innerHTML = 'Analog 2 : ' + newcolor6.analog[1];
+color6Analog3.style['background-color'] = newcolor6.analog[2];
+color6Analog3Text.innerHTML = 'Analog 3 : ' + newcolor6.analog[2];
+
+//Color 7
+let newcolor7 = colorTheoryGen();
+color7.style['background-color'] = newcolor7.base;
+color7All.style['background-color'] = newcolor7.base;
+color7Text.innerHTML = 'Base : ' + newcolor7.base;
+color7Compl.style['background-color'] = newcolor7.compl;
+color7ComplText.innerHTML = 'Complementary : ' + newcolor7.compl;
+color7SplitCompl1.style['background-color'] = newcolor7.splitCompl[0];
+color7SplitCompl1Text.innerHTML = 'Split Complementary 1 : ' + newcolor7.splitCompl[0];
+color7SplitCompl2.style['background-color'] = newcolor7.splitCompl[1];
+color7SplitCompl2Text.innerHTML = 'Split Complementary 2 : ' + newcolor7.splitCompl[1];
+color7Triadic1.style['background-color'] = newcolor7.triadic[0];
+color7Triadic1Text.innerHTML = 'Triadic 1 : ' + newcolor7.triadic[0];
+color7Triadic2.style['background-color'] = newcolor7.triadic[1];
+color7Triadic2Text.innerHTML = 'Triadic 2 : ' + newcolor7.triadic[1];
+color7Tetradic1.style['background-color'] = newcolor7.tetradic[0];
+color7Tetradic1Text.innerHTML = 'Tetradic 1 : ' + newcolor7.tetradic[0];
+color7Tetradic2.style['background-color'] = newcolor7.tetradic[1];
+color7Tetradic2Text.innerHTML = 'Tetradic 2 : ' + newcolor7.tetradic[1];
+color7Tetradic3.style['background-color'] = newcolor7.tetradic[2];
+color7Tetradic3Text.innerHTML = 'Tetradic 3 : ' + newcolor7.tetradic[2];
+color7Analog1.style['background-color'] = newcolor7.analog[0];
+color7Analog1Text.innerHTML = 'Analog 1 : ' + newcolor7.analog[0];
+color7Analog2.style['background-color'] = newcolor7.analog[1];
+color7Analog2Text.innerHTML = 'Analog 2 : ' + newcolor7.analog[1];
+color7Analog3.style['background-color'] = newcolor7.analog[2];
+color7Analog3Text.innerHTML = 'Analog 3 : ' + newcolor7.analog[2];
+
+//Color 8
+let newcolor8 = colorTheoryGen();
+color8.style['background-color'] = newcolor8.base;
+color8All.style['background-color'] = newcolor8.base;
+color8Text.innerHTML = 'Base : ' + newcolor8.base;
+color8Compl.style['background-color'] = newcolor8.compl;
+color8ComplText.innerHTML = 'Complementary : ' + newcolor8.compl;
+color8SplitCompl1.style['background-color'] = newcolor8.splitCompl[0];
+color8SplitCompl1Text.innerHTML = 'Split Complementary 1 : ' + newcolor8.splitCompl[0];
+color8SplitCompl2.style['background-color'] = newcolor8.splitCompl[1];
+color8SplitCompl2Text.innerHTML = 'Split Complementary 2 : ' + newcolor8.splitCompl[1];
+color8Triadic1.style['background-color'] = newcolor8.triadic[0];
+color8Triadic1Text.innerHTML = 'Triadic 1 : ' + newcolor8.triadic[0];
+color8Triadic2.style['background-color'] = newcolor8.triadic[1];
+color8Triadic2Text.innerHTML = 'Triadic 2 : ' + newcolor8.triadic[1];
+color8Tetradic1.style['background-color'] = newcolor8.tetradic[0];
+color8Tetradic1Text.innerHTML = 'Tetradic 1 : ' + newcolor8.tetradic[0];
+color8Tetradic2.style['background-color'] = newcolor8.tetradic[1];
+color8Tetradic2Text.innerHTML = 'Tetradic 2 : ' + newcolor8.tetradic[1];
+color8Tetradic3.style['background-color'] = newcolor8.tetradic[2];
+color8Tetradic3Text.innerHTML = 'Tetradic 3 : ' + newcolor8.tetradic[2];
+color8Analog1.style['background-color'] = newcolor8.analog[0];
+color8Analog1Text.innerHTML = 'Analog 1 : ' + newcolor8.analog[0];
+color8Analog2.style['background-color'] = newcolor8.analog[1];
+color8Analog2Text.innerHTML = 'Analog 2 : ' + newcolor8.analog[1];
+color8Analog3.style['background-color'] = newcolor8.analog[2];
+color8Analog3Text.innerHTML = 'Analog 3 : ' + newcolor8.analog[2];
+
+//Family Color
+let family = 'red';
+
+function genFamilyColors(){
+	let newColorFam1 = colorTheoryGen(false, family);
+	let newColorFam2 = colorTheoryGen(false, family);
+	let newColorFam3 = colorTheoryGen(false, family);
+	let newColorFam4 = colorTheoryGen(false, family);
+	let newColorFam5 = colorTheoryGen(false, family);	
+	let newColorFam6 = colorTheoryGen(false, family);
+	let newColorFam7 = colorTheoryGen(false, family);
+	let newColorFam8 = colorTheoryGen(false, family);
+	colorFam.style['background-color'] = family;
+	colorFamText.innerHTML = 'Family : ' + family;
+	colorFam1.style['background-color'] = newColorFam1.base;
+	colorFam1Text.innerHTML = newColorFam1.base;
+	colorFam2.style['background-color'] = newColorFam2.base;
+	colorFam2Text.innerHTML = newColorFam2.base;
+	colorFam3.style['background-color'] = newColorFam3.base;
+	colorFam3Text.innerHTML = newColorFam3.base;
+	colorFam4.style['background-color'] = newColorFam4.base;
+	colorFam4Text.innerHTML = newColorFam4.base;
+	colorFam5.style['background-color'] = newColorFam5.base;
+	colorFam5Text.innerHTML = newColorFam5.base;
+	colorFam6.style['background-color'] = newColorFam6.base;
+	colorFam6Text.innerHTML = newColorFam6.base;
+	colorFam7.style['background-color'] = newColorFam7.base;
+	colorFam7Text.innerHTML = newColorFam7.base;
+	colorFam8.style['background-color'] = newColorFam8.base;
+	colorFam8Text.innerHTML = newColorFam8.base;
+}
+genFamilyColors();
+
+/*
+Color Families 
+red 	#FF0000 	(255,0,0)
+orange 	#FFA500 	(255,165,0) 0.65
+yellow 	#FFFF00 	(255,255,0)
+lime 	#00FF00 	(0,255,0)
+blue 	#0000FF 	(0,0,255)
+cyan 	#00FFFF 	(0,255,255)
+magenta #FF00FF 	(255,0,255)
+maroon 	#800000 	(128,0,0)
+olive 	#808000 	(128,128,0)
+green 	#008000 	(0,128,0)
+purple 	#800080 	(128,0,128)
+teal 	#008080 	(0,128,128)
+navy 	#000080 	(0,0,128)
+silver 	#C0C0C0 	(192,192,192)
+gray 	#808080 	(128,128,128)
+black 	#000000 	(0,0,0)
+white 	#FFFFFF 	(255,255,255)
+*/
+
+//Color Family Select
+let currentFamily = family;
+const selects = document.querySelectorAll('select');
+for (const select of selects) {
+	select.addEventListener('click', function(){
+		family = select.value;
+		//family = this.dataset.value;
+		console.log(family);
+		if(currentFamily === family){}else{
+			currentFamily = family;
+			genFamilyColors();
+		}
+	});
+}
+
+</script>
+</html>
